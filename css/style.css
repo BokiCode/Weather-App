@@ -2,28 +2,66 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 :root {
-    --color-primary: #191926;
-    --color-secondary: #222231;
-    --color-light-gray: #343447;
+    --color-primary: #222231;
+    --color-secondary: #343447;
+    --color-dark-gray: #191926;
+    --color-text-gray: #7f7f98;
+    --color-green: #4cbb17;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: var(--color-text-gray);
 }
 body {
     background-color: var(--color-primary);
 }
-#toggle-color-mode {
-    background-color: var(--color-light-gray);
+#toggle-color {
+    width: 100px;
+}
+#toggle-color-background {
+    background-color: var(--color-secondary);
     width: 100px;
     height: 38px;
     border-radius: 40px;
     position: relative;
 }
 #toggle-color-circle {
-    background-color: var(--color-primary);
+    background-color: var(--color-dark-gray);
     height: 30px;
     width: 30px;
     border-radius: 50%;
     position: absolute;
     left: 4px;
     top: 4px;
+    transition: transform 0.3s ease;
+}
+.move-right {
+    transform: translateX(62px);
+}
+#toggle-color-paragraph {
+    color: #fff;
+    font-weight: bold;
+}
+.search-field {
+    width: 100%;
+    height: 62px;
+    border-radius: 40px;
+    background-color: var(--color-secondary);
+}
+#input-city-field {
+    width: 300px;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    outline:none;
+}
+.current-location {
+    background-color: var(--color-green);
+    width: 200px;
+    height: 62px;
+    border-radius: 40px;
 }
