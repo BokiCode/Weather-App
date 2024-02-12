@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-primary: #191926;
+    --color-secondary: #222231;
+    --color-light-gray: #343447;
+}
+body {
+    background-color: var(--color-primary);
+}
+#toggle-color-mode {
+    background-color: var(--color-light-gray);
+    width: 100px;
+    height: 38px;
+    border-radius: 40px;
+    position: relative;
+}
+#toggle-color-circle {
+    background-color: var(--color-primary);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+}
