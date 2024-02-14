@@ -65,4 +65,31 @@ body {
     height: 62px;
     border-radius: 40px;
 }
-@media
+.weather-cards {
+    background-color: var(--color-secondary);
+    height: 330px;
+    border-radius: 30px;
+}
+#city-paragraph {
+    font-size: 2.25rem;
+}
+#city-clock {
+    font-size: 6rem;
+}
+.weather-cards h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    background-image: linear-gradient(90deg, #fff, var(--color-text-gray));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.weather-cards .feels-like {
+    color: var(--color-text-gray);
+    font-size: 32px;
+}
+.weather-cards .feels-like span {
+    font-size: 20px;
+}
+.first-part {
+    width: 204px;
+}
