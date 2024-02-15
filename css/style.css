@@ -90,6 +90,25 @@ body {
 .weather-cards .feels-like span {
     font-size: 20px;
 }
-.first-part {
+.first-part, .third-part {
     width: 204px;
+}
+.second-part {
+    width: 290px;
+}
+.second-part img {
+    width: 80%;
+}
+.second-part h2 {
+    color: #fff;
+}
+.third-part {
+    height: 280px;
+}
+.third-part img {
+    width: 55px;
+    height: 55px;
+}
+.humidity, .wind-speed, .pressure, .uv {
+    width: 95px;
 }
