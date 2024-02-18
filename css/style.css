@@ -129,10 +129,10 @@ body {
 }
 
 .third-part img {
-    width: 55px;
+    width: 3.438rem;
     height: 55px;
 }
 
 .humidity, .wind-speed, .pressure, .uv {
-    width: 95px;
+    width: 5.938rem;
 }
