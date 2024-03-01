@@ -79,7 +79,6 @@ body {
 
 .weather-cards {
     background-color: var(--color-secondary);
-    height: 330px;
     border-radius: 30px;
 }
 
@@ -89,6 +88,12 @@ body {
 
 #city-clock {
     font-size: 6rem;
+}
+.city-time {
+    padding: 54px 0;
+}
+.detail-weather {
+    padding: 25px 0;
 }
 
 .weather-cards h1 {
