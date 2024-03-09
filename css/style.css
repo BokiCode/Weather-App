@@ -141,3 +141,8 @@ body {
 .humidity, .wind-speed, .pressure, .uv {
     width: 5.938rem;
 }
+@media (min-width: 768px) {
+    .w-md-35 {
+        width: 35% !important; /* for some reason doesn't work by itself */
+    }
+}
