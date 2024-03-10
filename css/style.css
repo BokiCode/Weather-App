@@ -147,11 +147,23 @@ body {
 .forecast-day {
     gap: 2.688rem;
 }
-.forecast-day-degree {
+.forecast-day-degree, .hourly-forecast-time {
     font-size: 1.5rem;
 }
-.forecast-day-date {
+.forecast-day-date, .hourly-forecast-degree, .hourly-forecast-wind-speed {
     font-size: 1.25rem;
+}
+.hourly-forecast {
+    padding-bottom: 18px;
+}
+.hourly-forecast-card {
+    background-color: var(--color-dark-gray);
+    width: 130px;
+    height: 270px;
+    border-radius: 40px;
+}
+.hourly-forecast-image {
+    width: 5rem;
 }
 
 @media (min-width: 768px) {
