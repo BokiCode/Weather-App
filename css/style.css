@@ -96,7 +96,7 @@ body {
     padding: 25px 0;
 }
 
-.weather-cards h1 {
+.weather-cards .first-part h1 {
     font-size: 5rem;
     font-weight: 800;
     background-image: linear-gradient(90deg, #fff, var(--color-text-gray));
@@ -140,6 +140,18 @@ body {
 
 .humidity, .wind-speed, .pressure, .uv {
     width: 5.938rem;
+}
+.days-forecast .forecast-day img {
+    width: 3.75rem;
+}
+.forecast-day {
+    gap: 2.688rem;
+}
+.forecast-day-degree {
+    font-size: 1.5rem;
+}
+.forecast-day-date {
+    font-size: 1.25rem;
 }
 
 @media (min-width: 768px) {
