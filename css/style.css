@@ -166,6 +166,31 @@ body {
     width: 5rem;
 }
 
+.media-scroller {
+    width: 100%;
+    overflow-x: auto; /* Change from "hidden" to "auto" */
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS devices */
+}
+
+.media-scroller::-webkit-scrollbar {
+    width: 8px; /* Customize scrollbar width */
+}
+
+.media-scroller::-webkit-scrollbar-thumb {
+    background-color: #888; /* Customize scrollbar thumb color */
+    border-radius: 4px; /* Customize scrollbar thumb border radius */
+}
+
+.media-scroller::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Customize scrollbar track color */
+}
+.media-container {
+    width: 740px;
+    margin: 0 auto;
+}
+
+
 @media (min-width: 768px) {
     .w-md-35 {
         width: 35% !important; /* for some reason doesn't work by itself */

@@ -5,4 +5,8 @@ $(document).ready(function () {
     $(".search-field").click(function () {
         $("#input-city-field").focus();
     });
+    $('.media-scroller').on('wheel', function(e) {
+        let delta = e.originalEvent.deltaY;
+        this.scrollLeft += (delta < 0 ? -30 : 30);
+    });
 });
