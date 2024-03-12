@@ -6,7 +6,14 @@ $(document).ready(function () {
         $("#input-city-field").focus();
     });
     $('.media-scroller').on('wheel', function(e) {
-        let delta = e.originalEvent.deltaY;
-        this.scrollLeft += (delta < 0 ? -30 : 30);
+        this.scrollLeft += (e.originalEvent.deltaY < 0 ? -30 : 30);
+    });
+    $('#toggle-color-background').click(function() {
+        let lightModeCss = $('link[href="/css/lightmode.css"]');
+        if (lightModeCss.length === 0) {
+            $('link[href="css/style.css"]').after('<link rel="stylesheet" href="/css/lightmode.css" id="light-mode-stylesheet">');
+        } else {
+            lightModeCss.remove();
+        }
     });
 });
