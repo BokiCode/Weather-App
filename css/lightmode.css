@@ -1,7 +1,15 @@
 :root {
     --color-primary: #DCDCE3;
-    --color-secondary: #343447;
-    --color-dark-gray: #191926;
-    --color-text-gray: #7f7f98;
+    --color-secondary: #9ea7b5;
+    --color-dark-gray: #4e5360;
+    --color-text-gray: #fff;
     --color-green: #4cbb17;
+}
+.weather-cards .first-part h1 {
+    background-image: linear-gradient(90deg, #fff, var(--color-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.feels-like {
+    color: #D0D0D0 !important;
 }
